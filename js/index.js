@@ -88,3 +88,6 @@ contactP[2].textContent = siteContent.contact.email;
 
 
 // footer 
+let footerCopyright = document.querySelector('footer p');
+
+footerCopyright.textContent = siteContent.footer.copyright;
