@@ -40,3 +40,51 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+let nav = document.querySelectorAll('nav a');
+for (let i = 0; i < 6; i++){
+    nav[i].textContent = siteContent.nav[`nav-item-${i + 1}`];
+}
+
+
+// cta
+let ctaH1 = document.querySelector('.cta .cta-text h1');
+let ctaBtn = document.querySelector('.cta .cta-text button');
+let ctaImg = document.getElementById('cta-img');
+
+ctaImg.setAttribute('src', siteContent.cta["img-src"]);
+ctaH1.textContent = siteContent.cta.h1;
+ctaBtn.textContent = siteContent.cta.button;
+
+// main content
+let H4 = document.querySelectorAll('.top-content .text-content h4');
+let textP = document.querySelectorAll('.top-content .text-content p');
+let middleImg = document.getElementById('middle-img');
+
+H4[0].textContent = siteContent["main-content"]["features-h4"];
+H4[1].textContent = siteContent["main-content"]["about-h4"];
+textP[0].textContent = siteContent["main-content"]["features-content"];
+textP[1].textContent = siteContent["main-content"]["about-content"];
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// bottom content
+let bH4 = document.querySelectorAll('.bottom-content .text-content h4');
+let btextP = document.querySelectorAll('.bottom-content .text-content p');
+
+bH4[0].textContent = siteContent["main-content"]["services-h4"];
+bH4[1].textContent = siteContent["main-content"]["product-h4"];
+bH4[2].textContent = siteContent["main-content"]["vision-h4"];
+btextP[0].textContent = siteContent["main-content"]["services-content"];
+btextP[1].textContent = siteContent["main-content"]["product-content"];
+btextP[2].textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+let contactH4 = document.querySelector('.contact h4');
+let contactP = document.querySelectorAll('.contact p');
+
+contactH4.textContent = siteContent.contact["contact-h4"];
+contactP[0].textContent = siteContent.contact.address;
+contactP[1].textContent = siteContent.contact.phone;
+contactP[2].textContent = siteContent.contact.email;
+
+
+// footer 
