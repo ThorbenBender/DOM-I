@@ -50,6 +50,7 @@ for (let i = 0; i < 6; i++){
 let ctaH1 = document.querySelector('.cta .cta-text h1');
 let ctaBtn = document.querySelector('.cta .cta-text button');
 let ctaImg = document.getElementById('cta-img');
+ctaH1.style.color = 'yellow';
 
 ctaImg.setAttribute('src', siteContent.cta["img-src"]);
 ctaH1.textContent = siteContent.cta.h1;
@@ -91,3 +92,6 @@ contactP[2].textContent = siteContent.contact.email;
 let footerCopyright = document.querySelector('footer p');
 
 footerCopyright.textContent = siteContent.footer.copyright;
+
+
+/// stretch
