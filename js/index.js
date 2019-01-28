@@ -51,6 +51,9 @@ let ctaH1 = document.querySelector('.cta .cta-text h1');
 let ctaBtn = document.querySelector('.cta .cta-text button');
 let ctaImg = document.getElementById('cta-img');
 ctaH1.style.color = 'yellow';
+ctaBtn.addEventListener('click', function(){
+  ctaH1.style.color = 'green';
+})
 
 ctaImg.setAttribute('src', siteContent.cta["img-src"]);
 ctaH1.textContent = siteContent.cta.h1;
